@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartRide Pro</title>
     <link rel="stylesheet" href="styles.css">
+    <title>SmartRide Pro</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to SmartRide Pro</h1>
+        <h1>SmartRide Pro</h1>
     </header>
     <main>
-        <section>
-            <h2>Your Ride Awaits</h2>
-            <p>Seamless ride-hailing solutions with SmartRide Pro.</p>
+        <section id="vehicle-selector">
+            <h2>Select Your Vehicle</h2>
+            <select id="vehicle-options">
+                <option value="car">Car</option>
+                <option value="bike">Bike</option>
+                <option value="suv">SUV</option>
+            </select>
         </section>
-        <section>
-            <h2>Features</h2>
-            <ul>
-                <li>Real-time tracking</li>
-                <li>Multiple payment options</li>
-                <li>Ride history</li>
-                <li>Rating and feedback system</li>
-            </ul>
+        <section id="interactive-map">
+            <h2>Map</h2>
+            <div id="map"></div>
+        </section>
+        <section id="driver-info">
+            <h2>Driver Information</h2>
+            <div id="driver-details">
+                <p>Name: John Doe</p>
+                <p>Rating: 4.9</p>
+            </div>
+        </section>
+        <section id="price-breakdown">
+            <h2>Price Breakdown</h2>
+            <p id="price">$20.00</p>
+        </section>
+        <section id="ad-space">
+            <h2>Advertisements</h2>
+            <div class="ad">Ad Space 1</div>
+            <div class="ad">Ad Space 2</div>
         </section>
     </main>
     <footer>
